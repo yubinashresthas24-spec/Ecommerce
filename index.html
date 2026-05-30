@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrestha Suppliers - Premium Kitchenware Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="top-banner">
+        <p>🚚 Free Shipping on orders over Rs. 3500 | 🇳🇵 Shrestha Suppliers - Since 1995</p>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>🏺 Shrestha <span>Suppliers</span></h1>
+                <p>Premium Kitchen Essentials</p>
+            </a>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <div class="user-dropdown">
+                <a href="#" class="user-icon" id="userIcon">
+                    <i class="fas fa-user"></i>
+                    <span id="userName">Account</span>
+                </a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="orders.html"><i class="fas fa-box"></i> My Orders</a>
+                    <a href="order-tracking.html"><i class="fas fa-truck"></i> Track Order</a>
+                    <a href="admin.html" id="adminPanelLink" style="display:none;"><i class="fas fa-crown"></i> Admin Panel</a>
+                    <a href="login.html" id="loginRegisterBtn"><i class="fas fa-sign-in-alt"></i> Login / Register</a>
+                    <a href="#" id="logoutBtn" style="display:none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Category Menu -->
+    <div class="category-menu">
+        <ul>
+            <li><a href="#" data-cat="all" class="active-cat">All Products</a></li>
+            <li><a href="#" data-cat="Cookers">Pressure Cookers</a></li>
+            <li><a href="#" data-cat="Electric">Electric Items</a></li>
+            <li><a href="#" data-cat="Kettles">Kettles & Jugs</a></li>
+            <li><a href="#" data-cat="Knives">Knives & Boards</a></li>
+            <li><a href="#" data-cat="Storage">Storage & Bottles</a></li>
+            <li><a href="#" data-cat="Fans">Fans & Appliances</a></li>
+            <li><a href="#" data-cat="Stoves">Stoves & Burners</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Premium Kitchenware</h2>
+        <h1>Quality Products</h1>
+        <p>Baltra | Tulip | Amit | Surya | Diamond | Hawkins</p>
+        <a href="products.html" class="btn-primary">Shop Now →</a>
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="featured">
+    <div class="container">
+        <h2 class="section-title">🔥 Featured Products</h2>
+        <div class="products-grid" id="featuredProducts">
+            <!-- Products loaded via JS -->
+        </div>
+    </div>
+</section>
+
+<!-- Brand Showcase -->
+<section class="brands">
+    <div class="container">
+        <h2 class="section-title">Trusted Brands</h2>
+        <div class="brand-slider">
+            <div class="brand-item">🏷️ Baltra</div>
+            <div class="brand-item">🏷️ Tulip</div>
+            <div class="brand-item">🏷️ Amit</div>
+            <div class="brand-item">🏷️ Surya</div>
+            <div class="brand-item">🏷️ Diamond</div>
+            <div class="brand-item">🏷️ Hawkins</div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="benefit">
+            <i class="fas fa-truck"></i>
+            <h3>Free Delivery</h3>
+            <p>On orders above Rs. 3500</p>
+        </div>
+        <div class="benefit">
+            <i class="fas fa-shield-alt"></i>
+            <h3>1 Year Warranty</h3>
+            <p>On all electric items</p>
+        </div>
+        <div class="benefit">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>7 Days Return</h3>
+            <p>Easy return policy</p>
+        </div>
+        <div class="benefit">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Call or WhatsApp</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Shrestha Suppliers</h3>
+            <p>Your trusted kitchenware partner since 1995. Quality products at best prices with fast delivery across Nepal.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab

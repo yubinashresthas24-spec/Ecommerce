@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Shrestha Suppliers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="top-banner">
+        <p>🔧 Admin Panel | Manage Products</p>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>🏺 Shrestha <span>Suppliers</span></h1>
+                <p>Admin Dashboard</p>
+            </a>
+        </div>
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<section class="admin-section">
+    <div class="container">
+        <h2 class="section-title">📦 Manage Products</h2>
+        
+        <div class="admin-form">
+            <h3>Add New Product</h3>
+            <div class="form-group">
+                <input type="text" id="productName" placeholder="Product Name">
+            </div>
+            <div class="form-group">
+                <input type="number" id="productPrice" placeholder="Price (Rs.)">
+            </div>
+            <div class="form-group">
+                <select id="productCategory">
+                    <option value="Electric">Electric Items</option>
+                    <option value="Cookers">Pressure Cookers</option>
+                    <option value="Kettles">Kettles & Jugs</option>
+                    <option value="Knives">Knives & Boards</option>
+                    <option value="Storage">Storage & Bottles</option>
+                    <option value="Fans">Fans & Appliances</option>
+                    <option value="Stoves">Stoves & Burners</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="productImage" placeholder="Image URL">
+            </div>
+            <button class="btn-primary" id="addProductBtn">Add Product</button>
+        </div>
+        
+        <div class="admin-products-list">
+            <h3>Current Products</h3>
+            <div class="products-grid" id="adminProducts">
+                <!-- Products will be listed here -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

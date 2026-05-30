@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Shrestha Suppliers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .register-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+        }
+        .register-box {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+        .register-box h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .register-box input, .register-box select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .register-box button {
+            width: 100%;
+            padding: 12px;
+            background: #ff6b35;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .register-box button:hover {
+            background: #e55a2b;
+        }
+        .name-row {
+            display: flex;
+            gap: 10px;
+        }
+        .name-row input {
+            width: 50%;
+        }
+        .error-msg {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+            font-size: 14px;
+        }
+        .success-msg {
+            color: green;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+            font-size: 14px;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-link a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-banner">
+    <p>🚚 Free Shipping on orders over Rs. 3500 | Shrestha Suppliers</p>
+</div>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <h1>🏺 Shrestha <span>Suppliers</span></h1>
+            <p>Premium Kitchen Essentials</p>
+        </a>
+    </div>
+    <div class="nav-icons">
+        <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+</nav>
+
+<div class="register-container">
+    <div class="register-box">
+        <h2><i class="fas fa-user-plus"></i> Create Customer Account</h2>
+        <form id="customerRegisterForm">
+            <div class="name-row">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <input type="email" id="regEmail" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="address" placeholder="Delivery Address" required>
+            <select id="city" required>
+                <option value="">Select City</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="Pokhara">Pokhara</option>
+                <option value="Biratnagar">Biratnagar</option>
+                <option value="Butwal">Butwal</option>
+            </select>
+            <input type="password" id="regPassword" placeholder="Password (min 6 characters)" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Register as Customer</button>
+        </form>
+        <div id="registerErrorMsg" class="error-msg"></div>
+        <div id="registerSuccessMsg" class="success-msg"></div>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login Here</a></p>
+            <p><a href="index.html">← Back to Home</a></p>
+        </div>
+    </div>
+</div>
+
+<footer style="margin-top: 0;">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Shrestha Suppliers</h3>
+            <p>Premium kitchenware since 1995</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-phone"></i> +977 9851148548</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

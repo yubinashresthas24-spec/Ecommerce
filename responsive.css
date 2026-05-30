@@ -1,0 +1,375 @@
+/* responsive.css - Complete Mobile & Tablet Responsive Styles */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    .search-bar {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+    
+    .cart-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .cart-summary {
+        position: static;
+    }
+    
+    .benefits .container {
+        gap: 20px;
+    }
+}
+
+/* Mobile Landscape (576px - 768px) */
+@media (max-width: 768px) {
+    .top-banner {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    
+    .navbar {
+        padding: 12px 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo p {
+        font-size: 0.6rem;
+    }
+    
+    .category-menu ul {
+        padding: 10px 15px;
+        gap: 12px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .category-menu ul li a {
+        font-size: 0.75rem;
+        padding: 6px 0;
+        white-space: nowrap;
+    }
+    
+    .hero {
+        min-height: 350px;
+        padding: 60px 20px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin: 30px 0 20px;
+    }
+    
+    .section-title::after {
+        width: 40px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    
+    .product {
+        padding: 12px;
+    }
+    
+    .product img {
+        height: 160px;
+    }
+    
+    .product h3 {
+        font-size: 0.9rem;
+    }
+    
+    .product p {
+        font-size: 1rem;
+    }
+    
+    .product button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+    
+    .brand-item {
+        font-size: 0.8rem;
+        padding: 6px 18px;
+    }
+    
+    .benefits .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .benefit {
+        padding: 15px;
+    }
+    
+    .benefit i {
+        font-size: 1.8rem;
+    }
+    
+    .benefit h3 {
+        font-size: 0.9rem;
+    }
+    
+    .benefit p {
+        font-size: 0.75rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social {
+        justify-content: center;
+    }
+    
+    .cart-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .cart-item img {
+        margin: 0 auto;
+    }
+    
+    .quantity-control {
+        justify-content: center;
+    }
+    
+    .remove-item {
+        justify-self: center;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .track-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .order-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .order-item img {
+        margin: 0 auto;
+    }
+    
+    .order-item > div:last-child {
+        margin-left: 0 !important;
+    }
+    
+    .toast {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Login/Register responsive */
+    .login-container,
+    .register-container {
+        padding: 20px;
+    }
+    
+    .login-tabs,
+    .register-box {
+        margin: 0 15px;
+    }
+    
+    .tab-content {
+        padding: 20px;
+    }
+    
+    .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .name-row input {
+        width: 100%;
+    }
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .benefits .container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .product {
+        max-width: 100%;
+    }
+    
+    .hero-content .btn-primary {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .search-bar input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .search-bar button {
+        padding: 8px 15px;
+    }
+    
+    .nav-icons {
+        gap: 15px;
+    }
+    
+    .cart-icon, .user-icon {
+        font-size: 1.1rem;
+    }
+    
+    .brand-slider {
+        gap: 10px;
+    }
+    
+    .brand-item {
+        padding: 5px 12px;
+        font-size: 0.7rem;
+    }
+    
+    .empty-cart {
+        padding: 30px 20px;
+    }
+    
+    .empty-cart i {
+        font-size: 48px;
+    }
+    
+    .empty-cart h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cart-summary {
+        padding: 15px;
+    }
+    
+    .summary-row {
+        font-size: 0.9rem;
+    }
+    
+    .checkout-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very Small Devices (320px and below) */
+@media (max-width: 320px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .category-menu ul {
+        gap: 8px;
+    }
+    
+    .category-menu ul li a {
+        font-size: 0.7rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .top-banner,
+    .navbar,
+    .category-menu,
+    .benefits,
+    .brands,
+    footer,
+    .cart-summary button,
+    .checkout-btn {
+        display: none;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    .cart-container {
+        display: block;
+    }
+    
+    .cart-items {
+        box-shadow: none;
+        padding: 0;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Shrestha Suppliers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="top-banner">
+        <p>🚚 Free Shipping on orders over Rs. 3500 | 🇳🇵 Shrestha Suppliers - Since 1995</p>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>🏺 Shrestha <span>Suppliers</span></h1>
+                <p>Premium Kitchen Essentials</p>
+            </a>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+    
+    <div class="category-menu">
+        <ul>
+            <li><a href="#" data-cat="all" class="active-cat">All Products</a></li>
+            <li><a href="#" data-cat="Cookers">Pressure Cookers</a></li>
+            <li><a href="#" data-cat="Electric">Electric Items</a></li>
+            <li><a href="#" data-cat="Kettles">Kettles & Jugs</a></li>
+            <li><a href="#" data-cat="Knives">Knives & Boards</a></li>
+            <li><a href="#" data-cat="Storage">Storage & Bottles</a></li>
+            <li><a href="#" data-cat="Fans">Fans & Appliances</a></li>
+            <li><a href="#" data-cat="Stoves">Stoves & Burners</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="featured">
+    <div class="container">
+        <h2 class="section-title">🛍️ All Products</h2>
+        <div class="products-grid" id="allProducts">
+            <!-- Products loaded via JS -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Shrestha Suppliers</h3>
+            <p>Your trusted kitchenware partner since 1995.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">All Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+            <p><i class="fas fa-phone"></i> +977 9851148548</p>
+            <p><i class="fas fa-envelope"></i> info@shresthasuppliers.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Shrestha Suppliers. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
